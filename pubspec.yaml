@@ -1,0 +1,92 @@
+name: adms_showroom
+description: "ADMS Electric Mobility — 3D Showroom. Ride the Future."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+
+  # State Management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Supabase
+  supabase_flutter: ^2.8.4
+
+  # 3D Viewer — model_viewer_plus uses Google's <model-viewer> web component
+  model_viewer_plus: ^1.8.0
+
+  # Forms & Validation
+  flutter_form_builder: ^10.2.0
+  form_builder_validators: ^11.1.0
+
+  # File picking & uploads
+  file_picker: ^8.1.7
+  image_picker: ^1.1.2
+  cross_file: ^0.3.4+2
+
+  # Utilities
+  intl: ^0.20.1
+  uuid: ^4.5.1
+  url_launcher: ^6.3.1
+  share_plus: ^10.0.3
+  connectivity_plus: ^6.1.1
+  flutter_dotenv: ^5.2.1
+  logger: ^2.5.0
+  collection: ^1.18.0
+
+  # Charts (admin dashboard)
+  fl_chart: ^0.69.0
+
+  # Responsive layout
+  flutter_adaptive_scaffold: ^0.2.1
+
+  # Image viewing
+  photo_view: ^0.15.0
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/3d/
+    - .env
+
+  fonts:
+    - family: Rajdhani
+      fonts:
+        - asset: assets/fonts/Rajdhani-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Rajdhani-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rajdhani-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Rajdhani-Bold.ttf
+          weight: 700

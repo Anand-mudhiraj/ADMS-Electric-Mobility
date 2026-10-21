@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    ADMS Electric Mobility — 3D Showroom
+    Web entry point. model-viewer script required for model_viewer_plus.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ADMS Electric Mobility — 3D Showroom. Explore our premium electric scooters in interactive 3D. Ride the Future.">
+  <meta name="theme-color" content="#0B0D0F">
+
+  <!-- SEO -->
+  <meta property="og:title" content="ADMS Electric Mobility — 3D Showroom">
+  <meta property="og:description" content="Smart. Powerful. Sustainable. Explore ADMS electric scooters in interactive 3D.">
+  <meta property="og:type" content="website">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ADMS Showroom">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ADMS Electric Mobility — 3D Showroom</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google's model-viewer web component — required for model_viewer_plus on web -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+  <style>
+    /* Prevent white flash on load */
+    body {
+      background-color: #0B0D0F;
+      margin: 0;
+      padding: 0;
+    }
+    /* model-viewer must fill its parent */
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
